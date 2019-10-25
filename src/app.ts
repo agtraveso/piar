@@ -7,12 +7,14 @@ const app: express.Application = express()
 const port = process.env.PORT || 3000
 
 app.get('/ping', (_req, res) => {
-  res.send('pong')
+  res.json('pong')
 })
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   logger.info(
     `  App is running at http://localhost:${port} in ${process.env.NODE_ENV} mode`,
   )
   logger.info('  Press CTRL-C to stop\n')
 })
+
+export { server, app }

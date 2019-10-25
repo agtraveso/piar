@@ -7,9 +7,10 @@
     "build": "tsc & yarn lint:rules",
     "lint:format": "tslint --fix -c ./tslint.json 'src/**/*.ts'",
     "lint:rules": "tslint -p tsconfig.json -t stylish -c tslint.json -e \"src/tests/**\" \"src/**/*.ts\"",
-    "lint:tests": "tslint -p tsconfig.json -t stylish -c src/tests/tslint.json -e src/tests/references.ts \"src/tests/**/*.ts\"",
     "start": "NODE_ENV=development tsc-watch -w --pretty --onSuccess \"node -r dotenv/config ./dist/src/app.js\"",
-    "tslint:check": "tslint-config-prettier-check ./tslint.json"
+    "test": "jest --forceExit --detectOpenHandles --coverage --verbose",
+    "tslint:check": "tslint-config-prettier-check ./tslint.json",
+    "watch-test": "yarn test -- --watchAll"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,12 @@
     "typescript": "^3.6.4"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.19",
     "@types/pino": "^5.8.12",
+    "@types/supertest": "^2.0.8",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.1.0",
     "tslint": "^5.20.0",
     "tslint-config-airbnb-base": "^0.3.0",
     "tslint-config-prettier": "^1.18.0"

@@ -3,7 +3,7 @@
     "rulesDirectory": ["dist/src"],
     "rules": {
         "semicolon": [true, "never"],
-        "no-magic-numbers": [true, 3000],
+        "no-magic-numbers": false,
         "variable-name": {
             "options": [
               "check-format",
