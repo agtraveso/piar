@@ -1,0 +1,15 @@
+{
+    "extends": ["tslint:recommended", "tslint-config-prettier", "tslint-config-airbnb-base"],
+    "rulesDirectory": ["dist/src"],
+    "rules": {
+        "semicolon": [true, "never"],
+        "no-magic-numbers": [true, 3000],
+        "variable-name": {
+            "options": [
+              "check-format",
+              "allow-leading-underscore",
+              "require-const-for-all-caps"
+            ]
+          }
+    }
+}

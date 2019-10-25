@@ -1,0 +1,39 @@
+{
+  "name": "piar",
+  "version": "0.0.1",
+  "description": "dummy pull reminder",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc & yarn lint:rules",
+    "lint:format": "tslint --fix -c ./tslint.json 'src/**/*.ts'",
+    "lint:rules": "tslint -p tsconfig.json -t stylish -c tslint.json -e \"src/tests/**\" \"src/**/*.ts\"",
+    "lint:tests": "tslint -p tsconfig.json -t stylish -c src/tests/tslint.json -e src/tests/references.ts \"src/tests/**/*.ts\"",
+    "start": "NODE_ENV=development tsc-watch -w --pretty --onSuccess \"node -r dotenv/config ./dist/src/app.js\"",
+    "tslint:check": "tslint-config-prettier-check ./tslint.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarogtraveso/piar.git"
+  },
+  "author": "agtraveso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvarogtraveso/piar/issues"
+  },
+  "homepage": "https://github.com/alvarogtraveso/piar#readme",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "pino": "^5.13.5",
+    "pino-pretty": "^3.2.2",
+    "tsc-watch": "^2.1.2",
+    "typescript": "^3.6.4"
+  },
+  "devDependencies": {
+    "@types/pino": "^5.8.12",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb-base": "^0.3.0",
+    "tslint-config-prettier": "^1.18.0"
+  }
+}
