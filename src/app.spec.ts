@@ -11,5 +11,13 @@ describe('App boot', () => {
           expect(response.text).toContain('pong')
         })
     })
+    it('when incoming gitlab event is received then ok', async () => {
+      await request(app).post('/gitlab/events')
+        .expect(200)
+        .expect('Content-Type', /json/)
+        .then((response) => {
+          expect(response.text).toContain('ok')
+        })
+    })
   })
 })
