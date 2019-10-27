@@ -1,7 +1,8 @@
 import { Request, Response } from 'express'
-import logger from '../infrastructure/logging/Logger'
+import { gitlabEventReader } from '../infrastructure/events/incoming/gitlabEventReader'
+
 
 export const events = (req: Request, res: Response) => {
-  logger.info(req)
+  gitlabEventReader.read(req)
   res.json('ok')
 }
