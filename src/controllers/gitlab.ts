@@ -1,8 +1,7 @@
 import { Request, Response } from 'express'
-import { gitlabEventReader } from '../infrastructure/events/incoming/gitlabEventReader'
-
+import { gitIncomingEventProcessor } from '../infrastructure/boot'
 
 export const events = (req: Request, res: Response) => {
-  gitlabEventReader.read(req)
+  gitIncomingEventProcessor.process(req)
   res.json('ok')
 }
