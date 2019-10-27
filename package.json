@@ -7,9 +7,9 @@
     "build": "tsc",
     "lint": "tslint -p tsconfig.json -t stylish -c tslint.json -e \"src/tests/**\" \"src/**/*.ts\"",
     "lint:format": "tslint --fix -c ./tslint.json 'src/**/*.ts'",
-    "serve": "node dist/src/app.js",
+    "serve": "node dist/src/server.js",
     "start": "yarn serve",
-    "start:dev": "tsc-watch -w --pretty --onSuccess \"node -r dotenv/config ./dist/src/app.js\"",
+    "start:dev": "tsc-watch -w --pretty --onSuccess \"node -r dotenv/config ./dist/src/server.js\"",
     "test": "jest --forceExit --detectOpenHandles --coverage --verbose",
     "tslint:check": "tslint-config-prettier-check ./tslint.json",
     "watch-test": "yarn test -- --watchAll"
