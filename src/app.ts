@@ -12,7 +12,7 @@ app.get('/ping', (_req, res) => {
 
 const server = app.listen(port, () => {
   logger.info(
-    `  App is running at http://localhost:${port} in ${process.env.NODE_ENV} mode`,
+    `  App is running at http://localhost:${port} in ${app.get('env')} mode`,
   )
   logger.info('  Press CTRL-C to stop\n')
 })

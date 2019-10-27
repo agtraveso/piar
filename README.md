@@ -1,5 +1,7 @@
-# piar
-dummy pull reminder
+# Piar
+![](https://github.com/alvarogtraveso/piar/workflows/build/badge.svg?branch=master)
+
+Dummy pull reminder
 
 # Getting started
 - Clone the repository

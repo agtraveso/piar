@@ -1,6 +1,5 @@
 {
     "extends": ["tslint:recommended", "tslint-config-prettier", "tslint-config-airbnb-base"],
-    "rulesDirectory": ["dist/src"],
     "rules": {
         "semicolon": [true, "never"],
         "no-magic-numbers": false,
