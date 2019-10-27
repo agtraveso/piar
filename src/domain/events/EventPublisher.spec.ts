@@ -12,12 +12,12 @@ beforeEach(() => {
 
 describe('Event Publisher', () => {
   describe('publish an event', () => {
-    it('when no subscribers are configured then do nothing', () => {
+    it('when no subscribers are configured expect nothing', () => {
       expect(aMockedEventSubscriber.isAssignableFrom).not.toHaveBeenCalled()
       expect(aMockedEventSubscriber.process).not.toHaveBeenCalled()
     })
 
-    it('when event is assignable to a subscriber then process the event', () => {
+    it('when event is assignable to a subscriber expect to be processed', () => {
       eventPublisher.add(aMockedEventSubscriber)
       eventPublisher.add(aMockedEventSubscriber)
       eventPublisher.publish(anEvent)
@@ -26,7 +26,7 @@ describe('Event Publisher', () => {
       expect(aMockedEventSubscriber.process).toHaveBeenCalledTimes(2)
     })
 
-    it('when event is not assignable to a subscriber then do not process the event', () => {
+    it('when event is not assignable to a subscriber expect not to be processed', () => {
       isAssignableFrom.mockImplementation(() => false)
 
       eventPublisher = new EventPublisher()

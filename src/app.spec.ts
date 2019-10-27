@@ -3,7 +3,7 @@ import app from './app'
 
 describe('App boot', () => {
   describe('endpoints are up', () => {
-    it('when I Ping then Pong', async () => {
+    it('when ping expect pong', async () => {
       await request(app).get('/ping')
         .expect(200)
         .expect('Content-Type', /json/)
@@ -11,7 +11,7 @@ describe('App boot', () => {
           expect(response.text).toContain('pong')
         })
     })
-    it('when incoming gitlab event is received then ok', async () => {
+    it('when incoming gitlab event is received expect ok', async () => {
       await request(app).post('/gitlab/events')
         .expect(200)
         .expect('Content-Type', /json/)
