@@ -5,6 +5,7 @@ import * as gitlabController from './controllers/gitlab'
 const app: express.Application = express()
 
 // Express configuration.
+app.use(express.json())
 app.set('port', process.env.PORT || 3000)
 
 /**

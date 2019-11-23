@@ -1,0 +1,144 @@
+{
+  "object_kind": "merge_request",
+  "event_type": "merge_request",
+  "user": {
+    "name": "al",
+    "username": "alvarogtraveso",
+    "avatar_url": "https://assets.gitlab-static.net/uploads/-/system/user/avatar/1633277/avatar.png"
+  },
+  "project": {
+    "id": 10927235,
+    "name": "prbot",
+    "description": "",
+    "web_url": "https://gitlab.com/vualala/prbot",
+    "avatar_url": null,
+    "git_ssh_url": "git@gitlab.com:vualala/prbot.git",
+    "git_http_url": "https://gitlab.com/vualala/prbot.git",
+    "namespace": "vualala",
+    "visibility_level": 0,
+    "path_with_namespace": "vualala/prbot",
+    "default_branch": "master",
+    "ci_config_path": null,
+    "homepage": "https://gitlab.com/vualala/prbot",
+    "url": "git@gitlab.com:vualala/prbot.git",
+    "ssh_url": "git@gitlab.com:vualala/prbot.git",
+    "http_url": "https://gitlab.com/vualala/prbot.git"
+  },
+  "object_attributes": {
+    "assignee_id": 1632893,
+    "author_id": 1633277,
+    "created_at": "2019-03-29 20:31:11 UTC",
+    "description": "",
+    "head_pipeline_id": 55621766,
+    "id": 26647789,
+    "iid": 1,
+    "last_edited_at": "2019-04-05 21:55:22 UTC",
+    "last_edited_by_id": 1633277,
+    "merge_commit_sha": null,
+    "merge_error": null,
+    "merge_params": {
+      "force_remove_source_branch": "0"
+    },
+    "merge_status": "can_be_merged",
+    "merge_user_id": null,
+    "merge_when_pipeline_succeeds": false,
+    "milestone_id": null,
+    "source_branch": "develop",
+    "source_project_id": 10927235,
+    "state": "closed",
+    "target_branch": "master",
+    "target_project_id": 10927235,
+    "time_estimate": 0,
+    "title": "WIP: just for testing",
+    "updated_at": "2019-04-07 20:40:15 UTC",
+    "updated_by_id": 1633277,
+    "url": "https://gitlab.com/vualala/prbot/merge_requests/1",
+    "source": {
+      "id": 10927235,
+      "name": "prbot",
+      "description": "",
+      "web_url": "https://gitlab.com/vualala/prbot",
+      "avatar_url": null,
+      "git_ssh_url": "git@gitlab.com:vualala/prbot.git",
+      "git_http_url": "https://gitlab.com/vualala/prbot.git",
+      "namespace": "vualala",
+      "visibility_level": 0,
+      "path_with_namespace": "vualala/prbot",
+      "default_branch": "master",
+      "ci_config_path": null,
+      "homepage": "https://gitlab.com/vualala/prbot",
+      "url": "git@gitlab.com:vualala/prbot.git",
+      "ssh_url": "git@gitlab.com:vualala/prbot.git",
+      "http_url": "https://gitlab.com/vualala/prbot.git"
+    },
+    "target": {
+      "id": 10927235,
+      "name": "prbot",
+      "description": "",
+      "web_url": "https://gitlab.com/vualala/prbot",
+      "avatar_url": null,
+      "git_ssh_url": "git@gitlab.com:vualala/prbot.git",
+      "git_http_url": "https://gitlab.com/vualala/prbot.git",
+      "namespace": "vualala",
+      "visibility_level": 0,
+      "path_with_namespace": "vualala/prbot",
+      "default_branch": "master",
+      "ci_config_path": null,
+      "homepage": "https://gitlab.com/vualala/prbot",
+      "url": "git@gitlab.com:vualala/prbot.git",
+      "ssh_url": "git@gitlab.com:vualala/prbot.git",
+      "http_url": "https://gitlab.com/vualala/prbot.git"
+    },
+    "last_commit": {
+      "id": "d7f536ebaab298bb999168d8151de33fce955f4c",
+      "message": "isolate domain of SlackSubscriber into GitEventNotifierSubscriber\n",
+      "timestamp": "2019-04-07T20:33:26Z",
+      "url": "https://gitlab.com/vualala/prbot/commit/d7f536ebaab298bb999168d8151de33fce955f4c",
+      "author": {
+        "name": "Alvaro Gomez Traveso",
+        "email": "agtraveso.developer@gmail.com"
+      }
+    },
+    "work_in_progress": true,
+    "total_time_spent": 0,
+    "human_total_time_spent": null,
+    "human_time_estimate": null,
+    "assignee_ids": [
+      1632893
+    ]
+  },
+  "labels": [
+
+  ],
+  "changes": {
+    "assignees": {
+      "previous": [
+
+      ],
+      "current": [
+        {
+          "name": "jorge",
+          "username": "giraldezjorge",
+          "avatar_url": "https://secure.gravatar.com/avatar/82810b9eaf8d5ef65b5391510745ff70?s=80&d=identicon"
+        }
+      ]
+    },
+    "total_time_spent": {
+      "previous": null,
+      "current": 0
+    }
+  },
+  "repository": {
+    "name": "prbot",
+    "url": "git@gitlab.com:vualala/prbot.git",
+    "description": "",
+    "homepage": "https://gitlab.com/vualala/prbot"
+  },
+  "assignees": [
+    {
+      "name": "jorge",
+      "username": "giraldezjorge",
+      "avatar_url": "https://secure.gravatar.com/avatar/82810b9eaf8d5ef65b5391510745ff70?s=80&d=identicon"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
-import { Event } from '../Exports'
+import { GitEvent } from '../git/Exports'
 
 export abstract class GitIncomingEventReader {
   public abstract isAssignableFrom(incomingEvent: any): boolean
-  public abstract read(incomingEvent: any): Event
+  public abstract read(incomingEvent: any): GitEvent
 }
